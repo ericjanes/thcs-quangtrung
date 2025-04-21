@@ -93,7 +93,7 @@ function viewClass(className) {
       "ten": "Lê Thanh Nguyên",
       "tuoi": 14,
       "lop": className,
-      "sothich": "Đọc sách, võ thuật",
+      "sothich": "Đọc sách, xem phim",
       "facebook": "https://www.facebook.com/thanh.le.916698",
       "avatar": "images/default-avatar.jpg"
     }]);

@@ -3,7 +3,7 @@ let students = [
     "ten": "Lê Thanh Nguyên",
     "tuoi": 14,
     "lop": "7A6",
-    "sothich": "Đọc sách, võ thuật",
+    "sothich": "Đọc sách, xem phim",
     "facebook": "https://www.facebook.com/thanh.le.916698",
     "avatar": "images/default-avatar.jpg"
   },

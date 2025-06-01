@@ -1,1 +1,0 @@
-# thcs-quangtrung

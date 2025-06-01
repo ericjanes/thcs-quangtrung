@@ -83,22 +83,26 @@ function renderClasses() {
 }
 
 function viewClass(className) {
-  const container = document.getElementById('students-list');
-  container.innerHTML = '';
-
-  const classData = classes[7].find(c => c.lop === className);
-
-  if (classData && classData.info === "Đã có thông tin của 1 học sinh") {
-    renderStudents([{
-      "ten": "Lê Thanh Nguyên",
-      "tuoi": 14,
-      "lop": className,
-      "sothich": "Đọc sách, xem phim",
-      "facebook": "https://www.facebook.com/thanh.le.916698",
-      "avatar": "images/default-avatar.jpg"
-    }]);
+  if (className === "7A6") {
+    window.location.href = `class-${className}.html`;
   } else {
-    container.innerHTML = `<p>Chưa có thông tin cho lớp ${className}</p>`;
+    const container = document.getElementById('students-list');
+    container.innerHTML = '';
+
+    const classData = classes[7].find(c => c.lop === className);
+
+    if (classData && classData.info === "Đã có thông tin của 1 học sinh") {
+      renderStudents([{
+        "ten": "Lê Thanh Nguyên",
+        "tuoi": 14,
+        "lop": className,
+        "sothich": "Đọc sách, xem phim",
+        "facebook": "https://www.facebook.com/thanh.le.916698",
+        "avatar": "images/default-avatar.jpg"
+      }]);
+    } else {
+      container.innerHTML = `<p>Chưa có thông tin cho lớp ${className}</p>`;
+    }
   }
 }
 
